@@ -398,7 +398,7 @@ foreach($userEmail in $hTable.keys)
     {
         # send the individual user an email with all of their checked out files listed
 #############        $send = [Microsoft.SharePoint.Utilities.SPUtility]::SendEmail($web,0,0,$userEmail,"Your Checked Out Files", $msgBody.ToString()) ############# uncomment when ready to send to all users
-    } # else: skip the user because they either dont have a simcoe email or it's an adm account
+    } # else: skip the user because they either dont have a company email
     
     # reset the msgBody variable for the next user
     $msgBody = ""
